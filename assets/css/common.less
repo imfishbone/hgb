@@ -1,0 +1,35 @@
+// 样式通用变量
+@pagebgColor: rgba(245,245,245, 1);
+@lightDark: rgba(37,37,37, 1);
+@dark: rgba(32,32,32, 1);
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "方正兰亭中黑","Source Han Sans","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #91a1b3;
+  font-synthesis: none;
+  -moz-font-feature-settings: 'kern';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: @pagebgColor;
+}
+
+.center{
+  //width: 1200px;
+  margin: 0 auto;
+}
+.w1200{
+  width: 1200px;
+}
+
+.verticalCenter(@position) {
+  display: flex;
+  justify-content: @position;
+  align-items: @position;
+}
